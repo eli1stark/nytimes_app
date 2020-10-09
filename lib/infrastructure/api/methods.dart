@@ -7,7 +7,5 @@ const String apiKey = '6EJ2HuuDcMjTWefhJDheMuZpyWwnOadL';
 Future<Map> getTopStoriesofDay() async {
   String url = '$nyTimesAPI/mostpopular/v2/viewed/1.json?api-key=$apiKey';
 
-  print('API CALL');
-
   return await NetworkHelper(url).getData();
 }
